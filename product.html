@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - Shopify</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+
+  <body>
+    <!-- Header page  -->
+
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="./images/logo.png" width="100px" />
+          </div>
+
+          <ul id="navlist">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product.html">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="./account.html">Account</a></li>
+          </ul>
+          <a href="./cart.html"><img src="./images/cart.png" width="30px" height="30px" /></a>
+          <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()"/>
+        </nav>
+
+       
+      </div>
+
+
+
+    <!-- Featured products -->
+
+    <div class="small-container">
+        <div class="row " id="row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>High Price</option>
+                <option>Low Price</option>
+                <option>Sort by rating Price</option>
+                <option>sort by popularity</option>
+            </select>
+        </div>
+
+
+      <div class="row">
+        <div class="col-4">
+          <img src="./images/product-1.jpeg" />
+          <h4>Blue check T-shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>499Rs</p>
+        </div>
+        <div class="col-4">
+          <img src="./images/product-2.jpg" />
+          <h4>Black T-Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>299Rs</p>
+        </div>
+        <div class="col-4">
+          <img src="./images/product-3.jpeg" />
+          <h4>Fancy Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>1500Rs</p>
+        </div>
+        <div class="col-4">
+          <img src="./images/product-4.jpg" />
+          <h4>Watch</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>999Rs</p>
+        </div>
+      </div>
+
+      
+
+      <!-- Latest Products -->
+
+      <div class="row">
+        <div class="col-4">
+          <img src="./images/1.jpeg" />
+          <h4>Men Floral Print Pure Cotton Straight Kurta</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>499Rs</p>
+        </div>
+
+        <div class="col-4">
+         
+          <img src="./images/2.jpeg" />
+          <h4>Men Slim Fit Solid Mandarin Collar Formal Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>299Rs</p>
+        </div>
+        <div class="col-4">
+          <img src="./images/3.jpeg" />
+          <h4>Full Sleeve Solid Men Sports Jacket</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>1500Rs</p>
+        </div>
+        <div class="col-4">
+          <img src="./images/4.jpeg" />
+          <h4>Men Sports Jacket</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>999Rs</p>
+        </div>
+
+
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#x2192;</span>
+        </div>
+      
+    </div>
+
+
+
+<hr>
+<!-- Footer -->
+
+<footer class="end">
+
+  <div>
+    copyright © 2021-2024 Shopify
+  </div>
+</footer>
+
+
+<!-- java script -->
+
+<script>
+  let navlist = document.getElementById("navlist");
+
+  navlist.style.maxHeight="0px"
+
+  function menutoggle() {
+    if (navlist.style.maxHeight=="0px") {
+      navlist.style.maxHeight="200px";
+    } else {
+      navlist.style.maxHeight="0px"
+  
+    }
+ 
+  }
+
+
+</script>
+
+</body>
+
+
+</html>

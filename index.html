@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopify - Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+
+  <body>
+    <!-- Header page  -->
+
+    <div class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="./images/logo.png" width="100px" />
+          </div>
+
+          <ul id="navlist">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product.html">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="./account.html">Account</a></li>
+          </ul>
+        <a href="./cart.html"><img src="./images/cart.png" width="30px" height="30px" /></a>
+          
+          <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()"/>
+        </nav>
+
+        <div class="row">
+          <div class="col-2">
+            <h1>
+              Sell online with <br />
+              Shopify
+            </h1>
+            <p>Trusted by over 1,700,000 businesses worldwide</p>
+            <a href="" class="btn">Explore Now &#x2192;</a>
+          </div>
+          <div class="col-2">
+            <img src="./images/wallpaper1.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured categories -->
+
+    <div class="categories">
+      <h1 class="title">Featured categories</h1>
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3"><img src="./images/product-1.jpeg" />
+            <h4>Blue check T-shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>899Rs</p>
+          </div>
+          <div class="col-3"><img src="./images/categories-2.jpeg" />
+            <h4>Blue T-shirt</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p>499Rs</p>
+          </div>
+          <div class="col-3"><img src="./images/category-3.jpg" />
+            <h4>Hoodie</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p>1499Rs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured products -->
+
+    <div class="small-container">
+      <h2 class="title">Featured Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="./images/2.jpeg" />
+          <h4>Formal Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>499Rs</p>
+          <div  class="btn"> <a href="./product-details.html" style="color: white; text-decoration: none;">Buy</a> </div>
+        </div>
+        <div class="col-4">
+          <img src="./images/product-2.jpg" />
+          <h4>Black T-Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>299Rs</p>
+          <div class="btn">Buy</div>
+        </div>
+        <div class="col-4">
+          <img src="./images/product-3.jpeg" />
+          <h4>Fancy Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>1500Rs</p>
+          <div class="btn">Buy</div>
+        </div>
+        <div class="col-4">
+          <img src="./images/product-4.jpg" />
+          <h4>Watch</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>999Rs</p>
+          <div class="btn">Buy</div>
+        </div>
+      </div>
+
+      
+
+      <!-- Latest Products -->
+
+      <h2 class="title">Latest Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="./images/1.jpeg" />
+          <h4>Men Floral Print Pure Cotton Straight Kurta</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>499Rs</p>
+        </div>
+        <div class="col-4">
+          <img src="./images/categories-1.jpeg" />
+          <h4>White T-shirt </h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>299Rs</p>
+        </div>
+        <div class="col-4">
+          <img src="./images/3.jpeg" />
+          <h4>Full Sleeve Solid Men Sports Jacket</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>1500Rs</p>
+        </div>
+        <div class="col-4">
+          <img src="./images/4.jpeg" />
+          <h4>Men Sports Jacket</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>999Rs</p>
+        </div>
+      <div class="row">
+        <div class="col-4">
+          <img src="./images/5.jpeg" />
+          <h4>FOGG Scent</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>499Rs</p>
+        </div>
+        <div class="col-4">
+          <img src="./images/6.jpeg" />
+          <h4>Wild Stone  </h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>299Rs</p>
+        </div>
+        <div class="col-4">
+          <img src="./images/7.jpeg" />
+          <h4>Villain EAU DE PARFUM (Perfume)</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>1500Rs</p>
+        </div>
+        <div class="col-4">
+          <img src="./images/8.jpeg" />
+          <h4>Men Casual Brown Artificial Leather Wallet</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>999Rs</p>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Brands -->
+
+<div class="brand">
+  <div class="small-container">
+    <div class="title"> <h1> Our Brands</h1></div>
+    <div class="row">
+      <div class="col-5">
+        <img src="./images/logo-godrej.png" >
+      </div>
+      <div class="col-5">
+        <img src="./images/logo-philips.png" >
+      </div>
+      <div class="col-5">
+        <img src="./images/logo-coca-cola.png" >
+      </div>
+      <div class="col-5">
+        <img src="./images/logo-oppo.png" >
+      </div>
+      <div class="col-5">
+        <img src="./images/logo-paypal.png" >
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+<!-- Footer -->
+
+<footer class="end">
+
+  <div>
+    copyright © 2021-2024 Shopify
+  </div>
+</footer>
+
+
+<!-- java script -->
+
+<script>
+  let navlist = document.getElementById("navlist");
+
+  navlist.style.maxHeight="0px"
+
+  function menutoggle() {
+    if (navlist.style.maxHeight=="0px") {
+      navlist.style.maxHeight="200px";
+    } else {
+      navlist.style.maxHeight="0px"
+  
+    }
+ 
+  }
+
+
+</script>
+
+</body>
+
+
+</html>

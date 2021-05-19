@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products-details - Shopify</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+
+  <body>
+    <!-- Header page  -->
+
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="./images/logo.png" width="100px" />
+          </div>
+
+          <ul id="navlist">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product.html">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="./account.html">Account</a></li>
+          </ul>
+          <a href="./cart.html"><img src="./images/cart.png" width="30px" height="30px" /></a>
+          <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()"/>
+        </nav>
+
+      </div>
+
+
+
+      <!-- ----------------------Single page details---------------------- -->
+
+      <div class="small-container " id="single-product">
+          <div class="row">
+              <div class="col-2">
+                  <img src="./images/2.jpeg" width="100%" id="productImg">
+
+<div class="small-img-row">
+  <div class="small-img-col">
+    <img src="./images/2-a.jpeg" width="100%" class="small-img">
+  </div>
+  <div class="small-img-col">
+    <img src="./images/2-b.jpeg" width="100%" class="small-img">
+  </div>
+  <div class="small-img-col">
+    <img src="./images/2-c.jpeg" width="100%" class="small-img">
+  </div>
+</div>
+
+
+
+
+              </div>
+              <div class="col-2">
+                  <p>Home / T-shirt </p>
+                  <h1>Yellow Shirt</h1>
+                  <h4>499 RS </h4>
+                  <select >
+                      <option >Select size</option>
+                      <option >XXL</option>
+                      <option >XL</option>
+                      <option >Large</option>
+                      <option >Medium</option>
+                      <option >Small</option>
+                  </select>
+                  <input type="number"  value="1">
+                  <a href="" class="btn">Add to cart</a>
+
+                  <h3>Product details</h3>
+                  <br>
+                  <p>5th Anfold is a profeesional clothing sales company which is collection of extra-ordinary shirts.5th Anfold try their best to make every piece of shirt with is class comfort porche design and lead fashion trends.Through exquisite technology,high quality fabrics,a variety of options,bright colours,with each garment.5th Anfold offers every customer high quality clothing showing their different unique personality,styles and the grade of life and culture.
+                </p>
+              </div>
+          </div>
+      </div>
+
+
+    <!-- Featured products -->
+
+    <div class="small-container">
+     
+      <div class="row">
+        <div class="col-4">
+          <img src="./images/product-1.jpeg" />
+          <h4>Blue check T-shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>499Rs</p>
+        </div>
+        <div class="col-4">
+          <img src="./images/product-2.jpg" />
+          <h4>Black T-Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>299Rs</p>
+        </div>
+        <div class="col-4">
+          <img src="./images/product-3.jpeg" />
+          <h4>Fancy Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>1500Rs</p>
+        </div>
+        <div class="col-4">
+          <img src="./images/product-4.jpg" />
+          <h4>Watch</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>999Rs</p>
+        </div>
+      </div>
+
+      
+
+  
+
+
+
+<hr>
+<!-- Footer -->
+
+<footer class="end">
+
+  <div>
+    copyright © 2021-2024 Shopify
+  </div>
+</footer>
+
+
+<!-- java script -->
+
+<script>
+  let navlist = document.getElementById("navlist");
+
+  navlist.style.maxHeight="0px"
+
+  function menutoggle() {
+    if (navlist.style.maxHeight=="0px") {
+      navlist.style.maxHeight="200px";
+    } else {
+      navlist.style.maxHeight="0px"
+  
+    }
+ 
+  }
+
+// ------------------JS for Product gallery ----------------
+
+var productImg = document.getElementById("productImg");
+var smallImg = document.getElementsByClassName("small-img");
+
+  smallImg[0].onclick = function () {
+    productImg.src = smallImg[0].src;
+    
+  }
+
+  smallImg[1].onclick = function () {
+    productImg.src = smallImg[1].src;
+    
+  }
+
+  smallImg[2].onclick = function () {
+    productImg.src = smallImg[2].src;
+    
+  }
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
